@@ -1,3 +1,7 @@
+:root {
+  --color-white: hsl(0, 0%, 100%);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -9,13 +13,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--color-white);
+  color: var(--color-white);
 }
 
 .counter-container {
   background: linear-gradient(to top right, #2ec1c8, #30176b);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   box-shadow: 0 0 50px hsla(0, 0%, 0%, 0.5);
@@ -25,21 +30,25 @@ body {
   justify-content: space-between;
   overflow: hidden;
   width: 30rem;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .counter-heading {
   text-align: center;
+  margin-top: 6rem;
+  font-size: 3rem;
 }
 
 .counter {
   display: block;
   text-align: center;
+  font-size: 4rem;
 }
 
 .counter-buttons-container {
   display: flex;
   justify-content: center;
+  margin-top: 6rem;
 }
 
 .counter-buttons {
@@ -47,4 +56,12 @@ body {
   cursor: pointer;
   flex-grow: 1;
   text-align: center;
+  height: 5rem;
+  border: 0.5px solid var(--color-white);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.reload-icon {
+  font-size: 2rem;
 }

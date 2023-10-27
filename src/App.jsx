@@ -15,7 +15,7 @@ function App() {
     <div className="counter-container">
       <h1 className="counter-heading">Fancy Counter</h1>
       <span className="counter">{counter}</span>
-      <FontAwesomeIcon icon={faRotate} />
+      <FontAwesomeIcon className="reload-icon" icon={faRotate} />
       <div className="counter-buttons-container">
         <button className="counter-buttons" onClick={handleMinusClick}>
           -
