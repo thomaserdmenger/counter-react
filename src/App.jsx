@@ -7,11 +7,14 @@ import { faRotate } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   const [counter, setCounter] = React.useState(0);
+  const [rotate, setRotate] = React.useState("reload-icon");
 
   const handleMinusClick = () => setCounter((prevCounter) => prevCounter - 1);
   const handlePlusClick = () => setCounter((prevCounter) => prevCounter + 1);
+
   const handleReloadClick = () => {
-    window.location.reload();
+    setRotate("reload-icon-animation");
+    setTimeout(() => window.location.reload(), 2000);
   };
 
   let heading = "Fancy Counter";
@@ -29,7 +32,7 @@ function App() {
       <span className="counter">{counter}</span>
       <FontAwesomeIcon
         onClick={handleReloadClick}
-        className="reload-icon"
+        className={rotate}
         icon={faRotate}
       />
       <div className="counter-buttons-container">
