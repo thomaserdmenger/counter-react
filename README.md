@@ -1,8 +1,21 @@
-# React + Vite
+# JavaSrcipt Simple Counter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+Increase the counter by clicking the "Plus" button and decrease it by clicking the "Minus" button.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To count higher than 5, you must unlock the Pro version. You cannot decrease the counter to less than zero.
+
+You can reset the counter by clicking the refresh icon. A smooth animation will appear.
+
+You can also use the space bar or the cursor control key up to increase the counter and the curser control key down to decrease the counter.
+
+## Screenshot
+
+![](./public/screenshot.png)
+
+### Links
+
+- [See live site here](https://thomaserdmenger.github.io/counter-react/)
+- [GitHub Repository](https://github.com/thomaserdmenger/counter-react)
+- [GitHub Author](https://github.com/thomaserdmenger)
