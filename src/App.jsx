@@ -11,9 +11,18 @@ function App() {
   const handleMinusClick = () => setCounter((prevCounter) => prevCounter - 1);
   const handlePlusClick = () => setCounter((prevCounter) => prevCounter + 1);
 
+  let heading = "Fancy Counter";
+
+  if (counter === 5) {
+    heading = "Limit! Buy Pro for > 5";
+  } else if (counter > 5) {
+    setCounter(5);
+  }
+
   return (
     <div className="counter-container">
-      <h1 className="counter-heading">Fancy Counter</h1>
+      <h1 className="counter-heading">{heading}</h1>
+
       <span className="counter">{counter}</span>
       <FontAwesomeIcon className="reload-icon" icon={faRotate} />
       <div className="counter-buttons-container">
