@@ -10,6 +10,9 @@ function App() {
 
   const handleMinusClick = () => setCounter((prevCounter) => prevCounter - 1);
   const handlePlusClick = () => setCounter((prevCounter) => prevCounter + 1);
+  const handleReloadClick = () => {
+    window.location.reload();
+  };
 
   let heading = "Fancy Counter";
 
@@ -24,7 +27,11 @@ function App() {
       <h1 className="counter-heading">{heading}</h1>
 
       <span className="counter">{counter}</span>
-      <FontAwesomeIcon className="reload-icon" icon={faRotate} />
+      <FontAwesomeIcon
+        onClick={handleReloadClick}
+        className="reload-icon"
+        icon={faRotate}
+      />
       <div className="counter-buttons-container">
         <button className="counter-buttons" onClick={handleMinusClick}>
           -
